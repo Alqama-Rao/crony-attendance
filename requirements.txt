@@ -1,5 +1,4 @@
-fastapi
-pandas
+fastapi==0.75.0
 pickle-mixin
 xgboost
 uvicorn
@@ -9,5 +8,4 @@ httptools
 scikit-learn
 motor
 dnspython
-nltk
-opencv-python
+opencv-python==4.5.5.62
