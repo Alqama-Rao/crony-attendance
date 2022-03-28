@@ -7,7 +7,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-@app.get("/")
+@app.get("/recog")
 def recognition(image,image2):
     image = cv2.GaussianBlur(image, (5, 5), cv2.BORDER_DEFAULT)
     image2 = cv2.GaussianBlur(image2, (5, 5), cv2.BORDER_DEFAULT)
