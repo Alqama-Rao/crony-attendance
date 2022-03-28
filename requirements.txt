@@ -27,3 +27,4 @@ typing-extensions==4.1.1
 unicorn==1.0.3
 uvicorn==0.17.6
 virtualenv==20.13.0
+httptools
