@@ -28,3 +28,4 @@ unicorn==1.0.3
 uvicorn==0.17.6
 virtualenv==20.13.0
 httptools
+gunicorn
