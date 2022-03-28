@@ -20,6 +20,7 @@ Sphinx==1.4.8
 cryptography==3.3.2
 pyyaml>=4.2b1
 face_recognition_models
+face-recognition
 Click>=6.0
 dlib>=19.3.0
 numpy
