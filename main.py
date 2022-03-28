@@ -3,9 +3,18 @@ import cv2
 from fastapi import FastAPI
 # import base64
 # import numpy as np
-
+from starlette.middleware.cors import CORSMiddleware
 app = FastAPI()
 
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def string_return():
