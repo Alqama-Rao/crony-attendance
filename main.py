@@ -8,7 +8,7 @@ app = FastAPI()
 
 
 @app.get("/")
-def stringreturn():
+def string_return():
     return "Running"
 
 @app.get("/compare_image")
