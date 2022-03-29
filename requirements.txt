@@ -1,10 +1,5 @@
 fastapi
-pandas
 pickle-mixin
-xgboost
 uvicorn
 gunicorn
-uvloop
 httptools
-scikit-learn
-dnspython
