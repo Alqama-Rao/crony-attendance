@@ -20,15 +20,15 @@ app.add_middleware(
 def string_return():
     return "Running"
 
-# @app.get("/compare_image")
-# def recognition(image,image2):
+@app.get("/compare_image")
+def recognition(image,image2):
 #     image = cv2.GaussianBlur(image, (5, 5), cv2.BORDER_DEFAULT)
 #     image2 = cv2.GaussianBlur(image2, (5, 5), cv2.BORDER_DEFAULT)
 
-#     if image == image2:
-#         return "Same Image"
-#     else:
-#         return "Not The Same Image"
+    if int(image) == int(image2):
+        return "Same Image"
+    else:
+        return "Not The Same Image"
     # picture = base64.b64decode(image)
     # print("Decoded")
     # pic_as_np = np.frombuffer(picture, dtype=np.uint8)
