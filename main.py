@@ -1,4 +1,4 @@
-import cv2
+# import cv2
 # import face_recognition
 from fastapi import FastAPI
 # import base64
@@ -20,15 +20,15 @@ app.add_middleware(
 def string_return():
     return "Running"
 
-@app.get("/compare_image")
-def recognition(image,image2):
-    image = cv2.GaussianBlur(image, (5, 5), cv2.BORDER_DEFAULT)
-    image2 = cv2.GaussianBlur(image2, (5, 5), cv2.BORDER_DEFAULT)
+# @app.get("/compare_image")
+# def recognition(image,image2):
+#     image = cv2.GaussianBlur(image, (5, 5), cv2.BORDER_DEFAULT)
+#     image2 = cv2.GaussianBlur(image2, (5, 5), cv2.BORDER_DEFAULT)
 
-    if image == image2:
-        return "Same Image"
-    else:
-        return "Not The Same Image"
+#     if image == image2:
+#         return "Same Image"
+#     else:
+#         return "Not The Same Image"
     # picture = base64.b64decode(image)
     # print("Decoded")
     # pic_as_np = np.frombuffer(picture, dtype=np.uint8)
