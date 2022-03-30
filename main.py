@@ -1,4 +1,4 @@
-# import cv2
+import cv2
 # import face_recognition
 from fastapi import FastAPI
 # import base64
@@ -22,8 +22,8 @@ def string_return():
 
 @app.get("/compare_image")
 def recognition(image,image2):
-#     image = cv2.GaussianBlur(image, (5, 5), cv2.BORDER_DEFAULT)
-#     image2 = cv2.GaussianBlur(image2, (5, 5), cv2.BORDER_DEFAULT)
+    image = cv2.GaussianBlur(image, (5, 5), cv2.BORDER_DEFAULT)
+    image2 = cv2.GaussianBlur(image2, (5, 5), cv2.BORDER_DEFAULT)
 
     if int(image) == int(image2):
         return "Same Image"
