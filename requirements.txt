@@ -4,3 +4,4 @@ uvicorn
 gunicorn
 httptools
 opencv-python
+opencv-contrib-python
