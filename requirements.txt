@@ -3,5 +3,5 @@ pickle-mixin
 uvicorn
 gunicorn
 httptools
-python-opencv
+opencv-python
 opencv-contrib-python
