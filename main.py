@@ -1,4 +1,4 @@
-import cv2
+# import cv2
 # import face_recognition
 from fastapi import FastAPI
 # import base64
