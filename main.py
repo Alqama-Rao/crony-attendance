@@ -20,8 +20,6 @@ app.add_middleware(
 def string_return():
     return "Running"
 
-
-
 @app.post("/check2/")
 def check2(videoname: str):
     # Create a VideoCapture object and read from input file
