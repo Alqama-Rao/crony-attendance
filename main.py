@@ -20,6 +20,29 @@ app.add_middleware(
 def string_return():
     return "Running"
 
+
+
+@app.post("/check2/")
+def check2(videoname: str):
+    # Create a VideoCapture object and read from input file
+    cap = cv2.VideoCapture(videoname)
+
+    # Check if camera opened successfully
+    if (cap.isOpened() == False):
+        print("Error opening video  file")
+
+    # Read until video is completed
+    while (cap.isOpened()):
+
+        # Capture frame-by-frame
+        ret, frame = cap.read()
+        if ret is not True:
+            if cap is not None:
+                cap.release()
+                cv2.destroyWindow(videoname)
+            return "end"
+
+        
 @app.get("/compare_image")
 def recognition(image,image2):
     image = cv2.GaussianBlur(image, (5, 5), cv2.BORDER_DEFAULT)
